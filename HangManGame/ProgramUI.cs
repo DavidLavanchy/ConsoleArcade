@@ -115,7 +115,7 @@ namespace HangManGame
 
             BeginnerWords word = _repo.GetRandomWord();
             Console.WriteLine("You have 7 guesses to uncover the secret word.\n" +
-                $"The secret word is {word.NumberOfLettersInWord} letters long.\n" +
+                $"The secret word is {word.Word.Length} letters long.\n" +
                 $"Clue: {word.Clue}\n");
             Console.WriteLine("");
 
@@ -194,7 +194,7 @@ namespace HangManGame
                 {
                     hasWon = true;
                     Console.WriteLine($"" +
-                        $"YOU LOST! The secret word was:{word.Word}.\n" +
+                        $"YOU LOST! The secret word was: {word.Word}.\n" +
                         $"Would you like to play again? (y/n)");
                     HangMan.HangMan07();
                     string input1 = Console.ReadLine().ToLower();
@@ -303,7 +303,7 @@ namespace HangManGame
                 {
                     hasWon = true;
                     Console.WriteLine($"" +
-                        $"YOU LOST! The secret word was:{word.Word}.\n" +
+                        $"YOU LOST! The secret word was: {word.Word}.\n" +
                         $"Would you like to play again? (y/n)");
                     HangMan.HangMan07();
                     string input1 = Console.ReadLine().ToLower();
@@ -412,7 +412,7 @@ namespace HangManGame
                 {
                     hasWon = true;
                     Console.WriteLine($"" +
-                        $"YOU LOST! The secret word was:{word.Word}.\n" +
+                        $"YOU LOST! The secret word was: {word.Word}.\n" +
                         $"Would you like to play again? (y/n)");
                     HangMan.HangMan07();
                     string input1 = Console.ReadLine().ToLower();
@@ -532,7 +532,7 @@ namespace HangManGame
             IntermmediateWords word3 = new IntermmediateWords("carribean", "Vacation Destination");
             IntermmediateWords word4 = new IntermmediateWords("philadelphia", "City (American)");
             IntermmediateWords word5 = new IntermmediateWords("dumbbell", "Exercise equipment");
-           IntermmediateWords word6 = new IntermmediateWords("valporaiso", "University in Indiana");
+           IntermmediateWords word6 = new IntermmediateWords("colgate", "University in the United States");
            IntermmediateWords word7 = new IntermmediateWords("yesterday", "Beatle's Song");
            IntermmediateWords word8 = new IntermmediateWords("denali", "Mountain");
             IntermmediateWords word9 = new IntermmediateWords("monet", "Artist");
@@ -571,26 +571,26 @@ namespace HangManGame
         }
         private void SeedDifficultWords() 
         { 
-            DifficultWords word1 = new DifficultWords("maserati", "Car Make");
-            DifficultWords word2 = new DifficultWords("twix", "Candy Bar");
-            DifficultWords word3 = new DifficultWords("carribean", "Vacation Destination");
-            DifficultWords word4 = new DifficultWords("spongebob", "Cartoon Character");
+            DifficultWords word1 = new DifficultWords("porsche", "Car Make");
+            DifficultWords word2 = new DifficultWords("gobstopper", "Candy");
+            DifficultWords word3 = new DifficultWords("mississippi", "River");
+            DifficultWords word4 = new DifficultWords("pneumonia", "Sickness");
             DifficultWords word5 = new DifficultWords("ghana", "Country");
-            DifficultWords word6 = new DifficultWords("valporaiso", "University in Indiana");
-            DifficultWords word7 = new DifficultWords("yesterday", "Beatle's Song");
-            DifficultWords word8 = new DifficultWords("denali", "Mountain");
-            DifficultWords word9 = new DifficultWords("monet", "Artist");
-            DifficultWords word10 = new DifficultWords("mitochondria", "Part of the Cell");
-            DifficultWords word11 = new DifficultWords("triangle", "Musical Instrument");
-            DifficultWords word12 = new DifficultWords("delaware", "State");
-            DifficultWords word13 = new DifficultWords("hockey", "Sport");
-            DifficultWords word14 = new DifficultWords("hamlet", "Shakesperean Play");
-            DifficultWords word15 = new DifficultWords("panther", "Animal");
-            DifficultWords word16 = new DifficultWords("titanic", "Movie");
-            DifficultWords word17 = new DifficultWords("madagascar", "Island");
-            DifficultWords word18 = new DifficultWords("zimbabwe", "Country");
-            DifficultWords word19 = new DifficultWords("kidney", "Organ");
-            DifficultWords word20 = new DifficultWords("dodo", "Type of Bird");
+            DifficultWords word6 = new DifficultWords("brown", "University in the United States");
+            DifficultWords word7 = new DifficultWords("juneteenth", "Holiday");
+            DifficultWords word8 = new DifficultWords("smokeys", "Mountain Range");
+            DifficultWords word9 = new DifficultWords("picasso", "Artist");
+            DifficultWords word10 = new DifficultWords("ribosome", "Part of the Cell");
+            DifficultWords word11 = new DifficultWords("synthesizer", "Musical Instrument");
+            DifficultWords word12 = new DifficultWords("elevenfifty", "Coding Bootcamp");
+            DifficultWords word13 = new DifficultWords("caeser", "Historical Figure");
+            DifficultWords word14 = new DifficultWords("greedo", "Star Wars Character");
+            DifficultWords word15 = new DifficultWords("aardvark", "Animal");
+            DifficultWords word16 = new DifficultWords("goodfellas", "Movie");
+            DifficultWords word17 = new DifficultWords("trinidad", "Island");
+            DifficultWords word18 = new DifficultWords("passionfruit", "Song");
+            DifficultWords word19 = new DifficultWords("pluto", "Celestial Body");
+            DifficultWords word20 = new DifficultWords("crimson", "Color");
 
             _repoDifficult.AddWordsToList(word1);
             _repoDifficult.AddWordsToList(word2);

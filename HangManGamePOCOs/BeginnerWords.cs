@@ -10,14 +10,13 @@ namespace HangManGamePOCOs
     public class BeginnerWords : IWords
     {
         public BeginnerWords(){}
-        public BeginnerWords(string word, string clue, int numberOfLettersInWord)
+        public BeginnerWords(string word, string clue)
         {
             Word = word;
             Clue = clue;
-            NumberOfLettersInWord = numberOfLettersInWord;
         }
         public string Word { get; set; }
         public string Clue { get; set; }
-        public int NumberOfLettersInWord { get; set; }
+
     }
 }
