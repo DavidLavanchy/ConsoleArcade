@@ -1,0 +1,10 @@
+C:\ElevenFiftyProjects\HangManGame\HangManGame\bin\Debug\HangManGame.exe.config
+C:\ElevenFiftyProjects\HangManGame\HangManGame\bin\Debug\HangManGame.exe
+C:\ElevenFiftyProjects\HangManGame\HangManGame\bin\Debug\HangManGame.pdb
+C:\ElevenFiftyProjects\HangManGame\HangManGame\obj\Debug\HangManGame.csproj.AssemblyReference.cache
+C:\ElevenFiftyProjects\HangManGame\HangManGame\obj\Debug\HangManGame.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\HangManGame\HangManGame\obj\Debug\HangManGame.exe
+C:\ElevenFiftyProjects\HangManGame\HangManGame\obj\Debug\HangManGame.pdb
+C:\ElevenFiftyProjects\HangManGame\HangManGame\bin\Debug\HangManGamePOCOs.dll
+C:\ElevenFiftyProjects\HangManGame\HangManGame\bin\Debug\HangManGamePOCOs.pdb
+C:\ElevenFiftyProjects\HangManGame\HangManGame\obj\Debug\HangManGame.csproj.CopyComplete

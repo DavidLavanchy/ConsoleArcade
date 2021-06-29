@@ -1,0 +1,6 @@
+C:\ElevenFiftyProjects\HangManGame\HangManGamePOCOs\bin\Debug\HangManGamePOCOs.dll
+C:\ElevenFiftyProjects\HangManGame\HangManGamePOCOs\bin\Debug\HangManGamePOCOs.pdb
+C:\ElevenFiftyProjects\HangManGame\HangManGamePOCOs\obj\Debug\HangManGamePOCOs.csproj.AssemblyReference.cache
+C:\ElevenFiftyProjects\HangManGame\HangManGamePOCOs\obj\Debug\HangManGamePOCOs.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\HangManGame\HangManGamePOCOs\obj\Debug\HangManGamePOCOs.dll
+C:\ElevenFiftyProjects\HangManGame\HangManGamePOCOs\obj\Debug\HangManGamePOCOs.pdb
