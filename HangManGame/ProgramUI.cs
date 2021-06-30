@@ -13,6 +13,7 @@ namespace HangManGame
         private BeginnerRepo _repo = new BeginnerRepo();
         private IntermmediateRepo _repoIntermmediate = new IntermmediateRepo();
         private DifficultRepo _repoDifficult = new DifficultRepo();
+
         internal void Run()
         {
             Menu();
@@ -35,12 +36,18 @@ namespace HangManGame
                     "3. Exit HangMan\n");
                 Console.WriteLine();
                 Console.WriteLine(
-                "   ______            \n" +
-                "  |     |            \n" +
-                "  |     o            \n" +
-                "  |    -|-           \n" +
-                "  |    ( )           \n" +
-                " _|_                 \n");
+                "888                                                           \n" +
+                "888                                                           \n" +
+                "888                                                           \n" +
+                "88888b.  8888b. 88888b.  .d88b. 88888b.d88b.  8888b. 88888b.  \n" +
+                "888 '88b    '88b888 '88bd88P'88b888 '888 '88b    '88b888 '88b \n" +
+                "888  888.d888888888  888888  888888  888  888.d888888888  888 \n" +
+                "888  888888  888888  888Y88b 888888  888  888888  888888  888 \n" +
+                "888  888'Y888888888  888 'Y88888888  888  888'Y888888888  888 \n" +
+                "                             888                              \n" +
+                "                        Y8b d88P                              \n" +
+                "                         'Y88P'                               \n");
+
                 string input = Console.ReadLine();
                 string dashes = "-------------------";
 
@@ -454,26 +461,26 @@ namespace HangManGame
         }
         private void SeedBeginnerWords()
         {
-            BeginnerWords word1 = new BeginnerWords("indiana", "State", 7);
-            BeginnerWords word2 = new BeginnerWords("pizza", "Food", 5);
-            BeginnerWords word3 = new BeginnerWords("golf", "Sport", 4);
-            BeginnerWords word4 = new BeginnerWords("fish", "Pet", 5);
-            BeginnerWords word5 = new BeginnerWords("france", "Country", 6);
-            BeginnerWords word6 = new BeginnerWords("snake", "Animal", 5);
-            BeginnerWords word7 = new BeginnerWords("pacific", "Ocean", 7);
-            BeginnerWords word8 = new BeginnerWords("everest", "Mountain", 7);
-            BeginnerWords word9 = new BeginnerWords("willow", "Tree", 6);
-            BeginnerWords word10 = new BeginnerWords("pacers", "NBA Team", 6);
-            BeginnerWords word11 = new BeginnerWords("trumpet", "Musical Instrument", 7);
-            BeginnerWords word12 = new BeginnerWords("arizona", "State", 7);
-            BeginnerWords word13 = new BeginnerWords("piano", "Musical Instrument", 5);
-            BeginnerWords word14 = new BeginnerWords("noodles", "Food", 7);
-            BeginnerWords word15 = new BeginnerWords("china", "Country", 5);
-            BeginnerWords word16 = new BeginnerWords("ford", "Car Make", 4);
-            BeginnerWords word17 = new BeginnerWords("zion", "National Park", 4);
-            BeginnerWords word18 = new BeginnerWords("maine", "State", 5);
-            BeginnerWords word19 = new BeginnerWords("tacos", "Food", 5);
-            BeginnerWords word20 = new BeginnerWords("ostrich", "Type of Bird", 7);
+            BeginnerWords word1 = new BeginnerWords("indiana", "State");
+            BeginnerWords word2 = new BeginnerWords("pizza", "Food");
+            BeginnerWords word3 = new BeginnerWords("golf", "Sport");
+            BeginnerWords word4 = new BeginnerWords("fish", "Pet");
+            BeginnerWords word5 = new BeginnerWords("france", "Country");
+            BeginnerWords word6 = new BeginnerWords("snake", "Animal");
+            BeginnerWords word7 = new BeginnerWords("pacific", "Ocean");
+            BeginnerWords word8 = new BeginnerWords("everest", "Mountain");
+            BeginnerWords word9 = new BeginnerWords("willow", "Tree");
+            BeginnerWords word10 = new BeginnerWords("pacers", "NBA Team");
+            BeginnerWords word11 = new BeginnerWords("trumpet", "Musical Instrument");
+            BeginnerWords word12 = new BeginnerWords("arizona", "State");
+            BeginnerWords word13 = new BeginnerWords("piano", "Musical Instrument");
+            BeginnerWords word14 = new BeginnerWords("noodles", "Food");
+            BeginnerWords word15 = new BeginnerWords("china", "Country");
+            BeginnerWords word16 = new BeginnerWords("ford", "Car Make");
+            BeginnerWords word17 = new BeginnerWords("zion", "National Park");
+            BeginnerWords word18 = new BeginnerWords("maine", "State");
+            BeginnerWords word19 = new BeginnerWords("tacos", "Food");
+            BeginnerWords word20 = new BeginnerWords("ostrich", "Type of Bird");
 
             _repo.AddWordsToList(word1);
             _repo.AddWordsToList(word2);
