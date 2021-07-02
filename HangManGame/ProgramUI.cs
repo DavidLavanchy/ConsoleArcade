@@ -35,6 +35,7 @@ namespace HangManGame
                     "2. Rules\n" +
                     "3. Exit HangMan\n");
                 Console.WriteLine();
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine(
                 "888                                                           \n" +
                 "888                                                           \n" +
@@ -47,6 +48,7 @@ namespace HangManGame
                 "                             888                              \n" +
                 "                        Y8b d88P                              \n" +
                 "                         'Y88P'                               \n");
+                Console.ResetColor();
 
                 string input = Console.ReadLine();
                 string dashes = "-------------------";
@@ -169,9 +171,13 @@ namespace HangManGame
                     if (listOfLetters.Contains("_ ") == false)
                     {
                         hasWon = true;
+                        Console.Clear();
+                        HangManDrawings(chances);
                         Console.WriteLine("" +
                             $"YOU WON! The secret word was {word.Word}.\n" +
                             $" Would you like to play again? (y/n).");
+                        Console.WriteLine("");
+                        Winner();
                         string input1 = Console.ReadLine().ToLower();
 
                         if (input1 == "y")
@@ -200,10 +206,13 @@ namespace HangManGame
                 if (chances == 0)
                 {
                     hasWon = true;
+                    Console.Clear();
                     Console.WriteLine($"" +
                         $"YOU LOST! The secret word was: {word.Word}.\n" +
                         $"Would you like to play again? (y/n)");
                     HangMan.HangMan07();
+                    Console.WriteLine("");
+                    Loser();
                     string input1 = Console.ReadLine().ToLower();
 
                     if (input1 == "y")
@@ -278,9 +287,13 @@ namespace HangManGame
                     if (listOfLetters.Contains("_ ") == false)
                     {
                         hasWon = true;
+                        Console.Clear();
+                        HangManDrawings(chances);
                         Console.WriteLine("" +
                             $"YOU WON! The secret word was {word.Word}.\n" +
                             $" Would you like to play again? (y/n).");
+                        Console.WriteLine("");
+                        Winner();
                         string input1 = Console.ReadLine().ToLower();
 
                         if (input1 == "y")
@@ -309,9 +322,12 @@ namespace HangManGame
                 if (chances == 0)
                 {
                     hasWon = true;
+                    Console.Clear();
                     Console.WriteLine($"" +
                         $"YOU LOST! The secret word was: {word.Word}.\n" +
                         $"Would you like to play again? (y/n)");
+                    Console.WriteLine("");
+                    Loser();
                     HangMan.HangMan07();
                     string input1 = Console.ReadLine().ToLower();
 
@@ -387,9 +403,13 @@ namespace HangManGame
                     if (listOfLetters.Contains("_ ") == false)
                     {
                         hasWon = true;
+                        Console.Clear();
+                        HangManDrawings(chances);
                         Console.WriteLine("" +
                             $"YOU WON! The secret word was {word.Word}.\n" +
                             $" Would you like to play again? (y/n).");
+                        Console.WriteLine("");
+                        Winner();
                         string input1 = Console.ReadLine().ToLower();
 
                         if (input1 == "y")
@@ -418,9 +438,12 @@ namespace HangManGame
                 if (chances == 0)
                 {
                     hasWon = true;
+                    Console.Clear();
                     Console.WriteLine($"" +
                         $"YOU LOST! The secret word was: {word.Word}.\n" +
                         $"Would you like to play again? (y/n)");
+                    Console.WriteLine("");
+                    Loser();
                     HangMan.HangMan07();
                     string input1 = Console.ReadLine().ToLower();
 
@@ -619,6 +642,32 @@ namespace HangManGame
             _repoDifficult.AddWordsToList(word18);
             _repoDifficult.AddWordsToList(word19);
             _repoDifficult.AddWordsToList(word20);
+        }
+        private void Loser()
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("888         ");
+            Console.WriteLine("888      ");
+            Console.WriteLine("888      ");
+            Console.WriteLine("888  .d88b. .d8888b  .d88b. 888d888 ");
+            Console.WriteLine("888 d88''88b88K     d8P  Y8b888P' ");
+            Console.WriteLine("888 888  888'Y8888b.88888888888  ");
+            Console.WriteLine("888 Y88..88P     X88Y8b.    888     ");
+            Console.WriteLine("888 'Y88P'  88888P' 'Y8888 888     ");
+            Console.ResetColor();
+        }
+
+        private void Winner()
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(" ██╗░░░░░░░██╗██╗███╗░░██╗███╗░░██╗███████╗██████╗░");
+            Console.WriteLine("░██║░░██╗░░██║██║████╗░██║████╗░██║██╔════╝██╔══██╗");
+            Console.WriteLine("░╚██╗████╗██╔╝██║██╔██╗██║██╔██╗██║█████╗░░██████╔╝");
+            Console.WriteLine("░░████╔═████║░██║██║╚████║██║╚████║██╔══╝░░██╔══██╗");
+            Console.WriteLine("░░╚██╔╝░╚██╔╝░██║██║░╚███║██║░╚███║███████╗██║░░██║");
+            Console.WriteLine("░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚══╝╚═╝░░╚══╝╚══════╝╚═╝░░╚═╝");
+            Console.ResetColor();
+
         }
     }
 }
